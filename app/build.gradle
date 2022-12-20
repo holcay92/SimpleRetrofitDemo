@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    // kotlin kapt
+    id 'kotlin-kapt'
 }
 
 android {
@@ -50,5 +52,14 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
     // add coroutines adapter dependency
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
+    //view model
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-alpha03'
+    //livedata
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0-alpha03'
+    // annotation processor
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.4.0-alpha03'
+    // okhttp logging interceptor
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
 
 }
